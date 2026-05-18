@@ -3,113 +3,59 @@
 
 @string{aps = {American Physical Society,}}
 
-@book{einstein1920relativity,
-  title     = {Relativity: the Special and General Theory},
-  author    = {Einstein, Albert},
-  year      = {1920},
-  publisher = {Methuen & Co Ltd},
-  html      = {relativity.html}
+@InProceedings{Jang_2022_CVPR,
+    author    = {Jang, Donggon and Son, Sanghyeok and Kim, Dae-Shik},
+    title     = {Strengthening the Transferability of Adversarial Examples Using Advanced Looking Ahead and Self-CutMix},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},
+    month     = {June},
+    year      = {2022},
+    pages     = {148-155}
 }
 
-@book{einstein1956investigations,
-  bibtex_show = {true},
-  title       = {Investigations on the Theory of the Brownian Movement},
-  author      = {Einstein, Albert},
-  year        = {1956},
-  publisher   = {Courier Corporation},
-  preview     = {brownian-motion.gif}
+@InProceedings{Cho_2021_CVPR,
+    author    = {Cho, Wooyeong and Son, Sanghyeok and Kim, Dae-Shik},
+    title     = {Weighted Multi-Kernel Prediction Network for Burst Image Super-Resolution},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},
+    month     = {June},
+    year      = {2021},
+    pages     = {404-413}
 }
 
-@article{einstein1950meaning,
-  abbr        = {AJP},
-  bibtex_show = {true},
-  title       = {The meaning of relativity},
-  author      = {Einstein, Albert and Taub, AH},
-  journal     = {American Journal of Physics},
-  volume      = {18},
-  number      = {6},
-  pages       = {403--404},
-  year        = {1950},
-  publisher   = {American Association of Physics Teachers}
+@article{KANG2024112531,
+  title = {Adaptive Class Token Knowledge Distillation for Efficient Vision Transformer},
+  author = {Kang, Minchan and Son, Sanghyeok and Kim, Daeshik},
+  year = 2024,
+  journal = {Knowledge-Based Systems},
+  volume = {304},
+  pages = {112531},
+  issn = {0950-7051},
+  doi = {10.1016/j.knosys.2024.112531},
+  abstract = {The Vision Transformer (ViT) outperforms Convolutional Neural Networks (CNNs) but at the cost of significantly higher computational demands. Knowledge Distillation (KD) has shown promise in compressing complex networks by transferring knowledge from a large pre-trained model to a smaller one. However, current KD methods for ViT often rely on CNNs as teachers or neglect the importance of class token ([CLS]) information, resulting in ineffective distillation of ViT's unique knowledge. In this paper, we propose Adaptive Class token Knowledge Distillation ([CLS]-KD), which fully exploits information from the class token and patches in ViT. For class embedding (CLS) distillation, the intermediate CLS of the student model is aligned with the corresponding CLS of the teacher model through a projector. Furthermore, we introduce CLS-patch attention map distillation, where an attention map between the CLS and patch embeddings is generated and matched at each layer. This empowers the student model to learn how to dynamically extract patch embedding information into the CLS under teacher guidance. Finally, we propose Adaptive Layer-wise Distillation (ALD) to mitigate the imbalance in distillation effects varying with the depth of layers. This method assigns greater weight to the losses in layers where the training discrepancies between the teacher and student models are larger during distillation. Through these strategies, [CLS]-KD consistently surpasses existing state-of-the-art methods on the ImageNet-1K dataset across various teacher--student configurations. Furthermore, the proposed method demonstrates its generalization capability through transfer learning experiments on the CIFAR-10, CIFAR-100, and CALTECH-256 datasets.},
+  keywords = {Class token,Image classification,Knowledge distillation,Resource consumption,Vision transformer}
 }
 
-@article{PhysRev.47.777,
-  abbr              = {PhysRev},
-  title             = {Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author            = {Einstein*†, A. and Podolsky*, B. and Rosen*, N.},
-  abstract          = {In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal           = {Phys. Rev.},
-  location          = {New Jersey},
-  volume            = {47},
-  issue             = {10},
-  pages             = {777--780},
-  numpages          = {0},
-  year              = {1935},
-  month             = {May},
-  publisher         = aps,
-  doi               = {10.1103/PhysRev.47.777},
-  url               = {https://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html              = {https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf               = {example_pdf.pdf},
-  altmetric         = {248277},
-  dimensions        = {true},
-  google_scholar_id = {qyhmnyLat1gC},
-  video             = {https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ},
-  additional_info   = {. *More Information* can be [found here](https://github.com/alshedivat/al-folio/)},
-  annotation        = {* Example use of superscripts<br>† Albert Einstein},
-  selected          = {true},
-  inspirehep_id     = {3255}
-}
 
-@article{einstein1905molekularkinetischen,
-  title     = {{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author    = {Einstein, A.},
-  journal   = {Annalen der physik},
-  volume    = {322},
-  number    = {8},
-  pages     = {549--560},
-  year      = {1905},
-  publisher = {Wiley Online Library}
-}
+@ARTICLE{10735117,
+  author={Jang, Donggon and Lee, Sunhyeok and Choi, Gyuwon and Lee, Yejin and Son, Sanghyeok and Kim, Dae-Shik},
+  journal={IEEE Transactions on Image Processing}, 
+  title={Energy-Based Domain Adaptation Without Intermediate Domain Dataset for Foggy Scene Segmentation}, 
+  year={2024},
+  volume={33},
+  number={},
+  pages={6143-6157},
+  keywords={Training;Meteorology;Adaptation models;Radio frequency;Semantic segmentation;Reliability;Semantics;Predictive models;Filters;Standards;Unsupervised domain adaptation;foggy scene segmentation;energy score;features statistics matching},
+  doi={10.1109/TIP.2024.3483566}}
 
-@article{einstein1905movement,
-  abbr    = {Ann. Phys.},
-  title   = {Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author  = {Einstein, A.},
-  journal = {Ann. Phys.},
-  volume  = {17},
-  pages   = {549--560},
-  year    = {1905}
-}
-
-@article{einstein1905electrodynamics,
-  title  = {On the electrodynamics of moving bodies},
-  author = {Einstein, A.},
-  year   = {1905}
-}
-
-@article{einstein1905photoelectriceffect,
-  bibtex_show = {true},
-  abbr        = {Ann. Phys.},
-  title       = {{{\"U}ber einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt}},
-  author      = {Albert Einstein},
-  abstract    = {This is the abstract text.},
-  journal     = {Ann. Phys.},
-  volume      = {322},
-  number      = {6},
-  pages       = {132--148},
-  year        = {1905},
-  doi         = {10.1002/andp.19053220607},
-  award       = {Albert Einstein receveid the **Nobel Prize in Physics** 1921 *for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect*},
-  award_name  = {Nobel Prize}
-}
-
-@book{przibram1967letters,
-  bibtex_show = {true},
-  title       = {Letters on wave mechanics},
-  author      = {Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year        = {1967},
-  publisher   = {Vision},
-  preview     = {wave-mechanics.gif},
-  abbr        = {Vision}
+@article{kangBurstSuperresolutionAdaptive2023,
+  title = {Burst Super-Resolution with Adaptive Feature Refinement and Enhanced Group up-Sampling},
+  author = {Kang, Minchan and Jeong, Woojin and Son, Sanghyeok and Ham, Gyeongdo and Kim, Dae-shik},
+  year = 2023,
+  month = dec,
+  journal = {Applied Intelligence},
+  volume = {53},
+  number = {24},
+  pages = {30940--30953},
+  issn = {1573-7497},
+  doi = {10.1007/s10489-023-05127-w},
+  abstract = {Burst super-resolution (Burst SR) has achieved significant performance improvements through burst images captured by modern handheld devices. However, Burst SR still encounters several challenges. Firstly, misalignment between burst images is caused by hand tremors. Secondly, aligned features should be effectively combined and up-sampled to harness the rich information of the burst images. As numerous studies have attempted to solve these problems, the complexity of alignment and fusion strategies has been increased and the significance of up-sampling has been overlooked. It exacerbates the trade-off between performance and computational cost and leads to a problem where information from multiple frames is not effectively exploited in the up-sampling process. In this paper, we present a Burst SR network with adaptive feature refinement and enhanced group up-sampling strategies. To feature refine adaptively, we introduce a novel denoising and correction module to elaborately perform the alignment with deformable convolution instead of a pre-trained network. Furthermore, we propose the enhanced group up-sampling module to merge burst features without the loss of salient details effectively. With these two strategies, our proposed method achieves state-of-the-art performance and alleviates the trade-off between performance and computational cost compared to the existing Burst SR approaches.}
 }
