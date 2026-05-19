@@ -2,64 +2,40 @@
 layout: page
 title: projects
 permalink: /projects/
-description: A growing collection of your cool projects.
+description: A collection of my projects in reversed chronological order.
 nav: true
 nav_order: 3
-display_categories: [work, fun]
-horizontal: false
 ---
 
-<!-- pages/projects.md -->
+<!-- _pages/projects.md -->
+
 <div class="projects">
-{% if site.enable_project_categories and page.display_categories %}
-  <!-- Display categorized projects -->
-  {% for category in page.display_categories %}
-  <a id="{{ category }}" href=".#{{ category }}">
-    <h2 class="category">{{ category }}</h2>
-  </a>
-  {% assign categorized_projects = site.projects | where: "category", category %}
-  {% assign sorted_projects = categorized_projects | sort: "importance" %}
-  <!-- Generate cards for each project -->
-  {% if page.horizontal %}
-  <div class="container">
-    <div class="row row-cols-1 row-cols-md-2">
-    {% for project in sorted_projects %}
-      {% include projects_horizontal.liquid %}
-    {% endfor %}
-    </div>
-  </div>
-  {% else %}
-  <div class="row row-cols-1 row-cols-md-3">
-    {% for project in sorted_projects %}
-      {% include projects.liquid %}
-    {% endfor %}
-  </div>
+
+{% assign sorted_projects = site.projects | sort: "year" | reverse %}
+{% assign current_year = "" %}
+
+{% for project in sorted_projects %}
+  {% if project.year != current_year %}
+    {% unless forloop.first %}</ol>{% endunless %}
+    <h2 class="year">{{ project.year }}</h2>
+    <ol class="bibliography">
+    {% assign current_year = project.year %}
   {% endif %}
-  {% endfor %}
 
-{% else %}
-
-<!-- Display projects without categories -->
-
-{% assign sorted_projects = site.projects | sort: "importance" %}
-
-  <!-- Generate cards for each project -->
-
-{% if page.horizontal %}
-
-  <div class="container">
-    <div class="row row-cols-1 row-cols-md-2">
-    {% for project in sorted_projects %}
-      {% include projects_horizontal.liquid %}
-    {% endfor %}
+  <li>
+    <div class="project-item">
+      {% if project.redirect %}
+        <a href="{{ project.redirect }}"><strong>{{ project.title }}</strong></a>
+      {% else %}
+        <a href="{{ project.url | relative_url }}"><strong>{{ project.title }}</strong></a>
+      {% endif %}
+      {% if project.description %}
+        <div class="project-description">{{ project.description }}</div>
+      {% endif %}
     </div>
-  </div>
-  {% else %}
-  <div class="row row-cols-1 row-cols-md-3">
-    {% for project in sorted_projects %}
-      {% include projects.liquid %}
-    {% endfor %}
-  </div>
-  {% endif %}
-{% endif %}
+  </li>
+
+  {% if forloop.last %}</ol>{% endif %}
+{% endfor %}
+
 </div>
