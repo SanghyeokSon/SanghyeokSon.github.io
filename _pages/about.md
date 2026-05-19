@@ -6,7 +6,7 @@ subtitle:  <a href='http://brain.kaist.ac.kr/'>BREIL</a>, School of EE, KAIST / 
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: my_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>ssh816@kaist.ac.kr</p>
