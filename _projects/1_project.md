@@ -6,6 +6,7 @@ img: assets/img/12.jpg
 importance: 1
 category: work
 related_publications: true
+year: 2023
 ---
 
 Every project has a beautiful feature showcase page.
