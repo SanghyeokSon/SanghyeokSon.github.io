@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle:  <a href='http://brain.kaist.ac.kr/'>BREIL</a>,, School of EE, KAIST / Ph.D. Candidate
 
 profile:
   align: right
