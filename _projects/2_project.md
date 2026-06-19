@@ -5,4 +5,5 @@ description: Developed a Korean natural-language-to-SQL system using synthetic d
 img: 
 year: 2025
 importance: 2
+collab: true
 ---
