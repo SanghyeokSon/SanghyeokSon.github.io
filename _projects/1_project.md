@@ -5,4 +5,5 @@ description: Built a document understanding pipeline for table extraction and re
 img: 
 year: 2025
 importance: 1
+collab: true
 ---
