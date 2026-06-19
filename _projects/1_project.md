@@ -1,10 +1,11 @@
 ---
 layout: page
-title: 프로젝트 이름
-description: 한 줄 설명
+title: Document Table Extraction & Recognition
+description: Built a document understanding pipeline for table extraction and recognition, leveraging synthetic data to train the recognition model.
+img: 
 year: 2025
-redirect: https://github.com/you/repo   # 외부 링크로 보낼 때 (선택)
-img:
+importance: 1
+category: work
 ---
 
 Every project has a beautiful feature showcase page.
