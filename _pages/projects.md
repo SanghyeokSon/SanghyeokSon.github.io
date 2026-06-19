@@ -24,14 +24,29 @@ nav_order: 3
 
   <li>
     <div class="row">
-      <div class="col-sm-10">
-        <div class="title">
-          {% if project.redirect %}
-            <a href="{{ project.redirect }}">{{ project.title }}</a>
+      <!-- Thumbnail -->
+      <div class="col col-sm-2 abbr">
+        {% if project.img %}
+          {% if project.img contains '://' %}
+            <img class="preview z-depth-1 rounded" src="{{ project.img }}">
           {% else %}
-            <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
+            {%
+              include figure.liquid
+              loading="eager"
+              path=project.img
+              sizes="200px"
+              class="preview z-depth-1 rounded"
+              zoomable=true
+              avoid_scaling=true
+              alt=project.img
+            %}
           {% endif %}
-        </div>
+        {% endif %}
+      </div>
+
+      <!-- Content -->
+      <div class="col-sm-8">
+        <div class="title">{{ project.title }}</div>
         {% if project.description %}
           <div class="periodical">{{ project.description }}</div>
         {% endif %}
