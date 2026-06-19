@@ -50,13 +50,11 @@ nav_order: 3
         {% if project.description %}
           <div class="periodical">{{ project.description }}</div>
         {% endif %}
-        <div class="links">
-          {% if project.redirect %}
+        {% if project.redirect %}
+          <div class="links">
             <a href="{{ project.redirect }}" class="btn btn-sm z-depth-0" role="button">Link</a>
-          {% else %}
-            <a href="{{ project.url | relative_url }}" class="btn btn-sm z-depth-0" role="button">Details</a>
-          {% endif %}
-        </div>
+          </div>
+        {% endif %}
       </div>
     </div>
   </li>
