@@ -397,9 +397,9 @@ ninja.data = [{
           description: "Developed a Korean natural-language-to-SQL system using synthetic data and reinforcement-learning-based fine-tuning.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
-            },},{id: "projects-프로젝트-이름",
-          title: '프로젝트 이름',
-          description: "한 줄 설명",
+            },},{id: "projects-domain-specific-rag-system",
+          title: 'Domain-Specific RAG System',
+          description: "Built a retrieval-augmented generation system tailored to a specialized document domain, improving domain performance through synthetic data generation and targeted fine-tuning.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_project/";
             },},{id: "teachings-data-science-fundamentals",
