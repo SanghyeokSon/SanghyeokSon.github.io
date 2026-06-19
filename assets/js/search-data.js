@@ -387,9 +387,9 @@ ninja.data = [{
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
-          section: "News",},{id: "projects-프로젝트-이름",
-          title: '프로젝트 이름',
-          description: "한 줄 설명",
+          section: "News",},{id: "projects-document-table-extraction-amp-recognition",
+          title: 'Document Table Extraction &amp;amp; Recognition',
+          description: "Built a document understanding pipeline for table extraction and recognition, leveraging synthetic data to train the recognition model.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
             },},{id: "projects-프로젝트-이름",
