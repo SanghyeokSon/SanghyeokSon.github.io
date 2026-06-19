@@ -5,5 +5,4 @@ description: Developed a multimodal LLM for document question answering over cha
 img: 
 year: 2024
 importance: 2
-category: work
 ---
