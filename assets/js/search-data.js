@@ -392,9 +392,9 @@ ninja.data = [{
           description: "Built a document understanding pipeline for table extraction and recognition, leveraging synthetic data to train the recognition model.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
-            },},{id: "projects-프로젝트-이름",
-          title: '프로젝트 이름',
-          description: "한 줄 설명",
+            },},{id: "projects-korean-text-to-sql-system",
+          title: 'Korean Text-to-SQL System',
+          description: "Developed a Korean natural-language-to-SQL system using synthetic data and reinforcement-learning-based fine-tuning.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
             },},{id: "projects-프로젝트-이름",
