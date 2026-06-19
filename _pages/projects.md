@@ -50,9 +50,15 @@ nav_order: 3
         {% if project.description %}
           <div class="periodical">{{ project.description }}</div>
         {% endif %}
-        {% if project.redirect %}
+        {% assign has_links = project.collab or project.redirect %}
+        {% if has_links %}
           <div class="links">
-            <a href="{{ project.redirect }}" class="btn btn-sm z-depth-0" role="button">Link</a>
+            {% if project.collab %}
+              <a class="btn btn-sm z-depth-0" role="button">Industry Project</a>
+            {% endif %}
+            {% if project.redirect %}
+              <a href="{{ project.redirect }}" class="btn btn-sm z-depth-0" role="button">Link</a>
+            {% endif %}
           </div>
         {% endif %}
       </div>
