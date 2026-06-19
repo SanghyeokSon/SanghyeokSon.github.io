@@ -399,7 +399,7 @@ ninja.data = [{
               window.location.href = "/projects/2_project/";
             },},{id: "projects-domain-specific-rag-system",
           title: 'Domain-Specific RAG System',
-          description: "Built a retrieval-augmented generation system tailored to a specialized document domain, improving domain performance through synthetic data generation and targeted fine-tuning.",
+          description: "Built a retrieval-augmented generation system tailored to a specialized document domain, improving domain performance through synthetic data generation and fine-tuning of retrieval and generation components",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_project/";
             },},{id: "projects-document-qa-with-multimodal-llm",
