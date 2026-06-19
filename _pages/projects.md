@@ -9,7 +9,7 @@ nav_order: 3
 
 <!-- _pages/projects.md -->
 
-<div class="projects">
+<div class="publications">
 
 {% assign sorted_projects = site.projects | sort: "year" | reverse %}
 {% assign current_year = "" %}
@@ -23,15 +23,26 @@ nav_order: 3
   {% endif %}
 
   <li>
-    <div class="project-item">
-      {% if project.redirect %}
-        <a href="{{ project.redirect }}"><strong>{{ project.title }}</strong></a>
-      {% else %}
-        <a href="{{ project.url | relative_url }}"><strong>{{ project.title }}</strong></a>
-      {% endif %}
-      {% if project.description %}
-        <div class="project-description">{{ project.description }}</div>
-      {% endif %}
+    <div class="row">
+      <div class="col-sm-10">
+        <div class="title">
+          {% if project.redirect %}
+            <a href="{{ project.redirect }}">{{ project.title }}</a>
+          {% else %}
+            <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
+          {% endif %}
+        </div>
+        {% if project.description %}
+          <div class="periodical">{{ project.description }}</div>
+        {% endif %}
+        <div class="links">
+          {% if project.redirect %}
+            <a href="{{ project.redirect }}" class="btn btn-sm z-depth-0" role="button">Link</a>
+          {% else %}
+            <a href="{{ project.url | relative_url }}" class="btn btn-sm z-depth-0" role="button">Details</a>
+          {% endif %}
+        </div>
+      </div>
     </div>
   </li>
 
