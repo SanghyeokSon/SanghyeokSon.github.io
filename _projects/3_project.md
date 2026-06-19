@@ -1,10 +1,11 @@
 ---
 layout: page
-title: 프로젝트 이름
-description: 한 줄 설명
-year: 2025
-redirect: https://github.com/you/repo   # 외부 링크로 보낼 때 (선택)
-img:
+title: Domain-Specific RAG System
+description: Built a retrieval-augmented generation system tailored to a specialized document domain, improving domain performance through synthetic data generation and targeted fine-tuning.
+img: 
+year: 2024
+importance: 1
+category: work
 ---
 
 Every project has a beautiful feature showcase page.
