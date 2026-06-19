@@ -1,12 +1,9 @@
 ---
 layout: page
-title: project 2
-description: a project with a background image and giscus comments
-img: assets/img/3.jpg
-importance: 2
-category: work
-giscus_comments: true
+title: 프로젝트 이름
+description: 한 줄 설명
 year: 2025
+redirect: https://github.com/you/repo   # 외부 링크로 보낼 때 (선택)
 ---
 
 Every project has a beautiful feature showcase page.
