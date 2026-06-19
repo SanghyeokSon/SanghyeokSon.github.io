@@ -5,4 +5,5 @@ description: Built a retrieval-augmented generation system tailored to a special
 img: 
 year: 2024
 importance: 1
+collab: true
 ---
