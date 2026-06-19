@@ -397,9 +397,9 @@ ninja.data = [{
           description: "한 줄 설명",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
-            },},{id: "projects-project-3-with-very-long-name",
-          title: 'project 3 with very long name',
-          description: "a project that redirects to another website",
+            },},{id: "projects-프로젝트-이름",
+          title: '프로젝트 이름',
+          description: "한 줄 설명",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_project/";
             },},{id: "teachings-data-science-fundamentals",
