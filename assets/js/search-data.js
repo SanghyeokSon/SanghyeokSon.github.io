@@ -407,6 +407,11 @@ ninja.data = [{
           description: "Developed a multimodal LLM for document question answering over chart images, tuned on synthetic and real image-question data.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/4_project/";
+            },},{id: "projects-neural-topic-modeling-for-domain-text",
+          title: 'Neural Topic Modeling for Domain Text',
+          description: "Performed topic modeling on domain-specific text using a neural topic modeling approach.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/5_project/";
             },},{id: "teachings-data-science-fundamentals",
           title: 'Data Science Fundamentals',
           description: "This course covers the foundational aspects of data science, including data collection, cleaning, analysis, and visualization. Students will learn practical skills for working with real-world datasets.",
