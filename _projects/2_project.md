@@ -1,10 +1,11 @@
 ---
 layout: page
-title: 프로젝트 이름
-description: 한 줄 설명
+title: Korean Text-to-SQL System
+description: Developed a Korean natural-language-to-SQL system using synthetic data and reinforcement-learning-based fine-tuning.
+img: 
 year: 2025
-redirect: https://github.com/you/repo   # 외부 링크로 보낼 때 (선택)
-img:
+importance: 2
+category: work
 ---
 
 Every project has a beautiful feature showcase page.
