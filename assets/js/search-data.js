@@ -392,9 +392,9 @@ ninja.data = [{
           description: "한 줄 설명",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
-            },},{id: "projects-project-2",
-          title: 'project 2',
-          description: "a project with a background image and giscus comments",
+            },},{id: "projects-프로젝트-이름",
+          title: '프로젝트 이름',
+          description: "한 줄 설명",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
             },},{id: "projects-project-3-with-very-long-name",
